@@ -17,4 +17,8 @@ public class Phone {
     public String getName() {
         return name;
     }
+
+    public static int compareByName(Phone a, Phone b){
+        return a.name.compareTo(b.name);
+    }
 }

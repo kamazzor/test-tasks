@@ -1,6 +1,7 @@
 package ru.mytasks;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
@@ -28,6 +29,9 @@ public class WidgetUser{
 
 //        reduceWith3Parameters();
         simpleReduce();
+
+        Phone[] rosterAsArray = new Phone[10];
+        Arrays.sort(rosterAsArray, Phone::compareByName);
     }
     //Sum phone prices less that 50000 using reduce. First param of reduce is initial param,
     // second param is BinaryFunction sum 2 current near numbers and hold that sum as temporal value,
